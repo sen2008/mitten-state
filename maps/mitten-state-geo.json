@@ -1,0 +1,121 @@
+{
+  "_notes": "Mitten State geography reference pack for the Michigan state-simulation game. PROVENANCE: every lat/lon below was read from the English Wikipedia coordinates API (en.wikipedia.org/w/api.php prop=coordinates) on 2026-10-06 and rounded to 4 decimals (~11m precision, plenty for game relative positions). No coordinate was guessed: any value that could not be verified would carry coord_status 'verify' with lat/lon null -- currently ALL entries are verified, zero 'verify' flags. Populations are approximate 2020-census-rounded gameplay values (NOT Wikipedia-verified, tune freely). Regions are game-design groupings (not official Michigan regions) that partition all 83 real Michigan counties with no overlaps; county lists are authoritative for membership, bboxes are rough gameplay guides and may overlap at edges. Highway polylines use verified city/town coordinates only; out-of-state anchors (Toledo OH) position the Michigan state-line ends. Mackinac Bridge landings are approximated by the verified Mackinaw City / St. Ignace city centers (bridge is ~8km; city-to-city span matches at game scale); bridge center is the verified Mackinac Bridge article coordinate. GODOT USE: load with JSON.parse_string(FileAccess.get_file_as_string(...)), project lon/lat to map space with an equirectangular projection scaled to your map rect, draw highways as Line2D through waypoint nodes, place cities as Node2D markers grouped by region, draw the bridge as a toll link between the two landings.",
+  "cities": [
+    {"coord_status": "verified", "economy": "Auto HQ and plants (Big Three), river port, music and manufacturing", "lat": 42.3317, "lon": -83.0458, "name": "Detroit", "population": 640000, "region": "Southeast/Motor"},
+    {"coord_status": "verified", "economy": "Furniture and office systems, craft brewing, medical corridor", "lat": 42.9633, "lon": -85.6678, "name": "Grand Rapids", "population": 200000, "region": "West/Lakeshore"},
+    {"coord_status": "verified", "economy": "State capital and government, auto plants, Michigan State nearby", "lat": 42.7142, "lon": -84.56, "name": "Lansing", "population": 112000, "region": "Central/Growers"},
+    {"coord_status": "verified", "economy": "University of Michigan, tech and research corridor", "lat": 42.2814, "lon": -83.7483, "name": "Ann Arbor", "population": 123000, "region": "Southeast/Motor"},
+    {"coord_status": "verified", "economy": "GM birthplace auto plants, revitalizing manufacturing", "lat": 43.0189, "lon": -83.6933, "name": "Flint", "population": 81000, "region": "Southeast/Motor"},
+    {"coord_status": "verified", "economy": "Manufacturing and agriculture trade hub", "lat": 43.42, "lon": -83.95, "name": "Saginaw", "population": 44000, "region": "Central/Growers"},
+    {"coord_status": "verified", "economy": "Shipbuilding heritage, manufacturing, bay tourism", "lat": 43.595, "lon": -83.8886, "name": "Bay City", "population": 32000, "region": "Central/Growers"},
+    {"coord_status": "verified", "economy": "Dow Chemical HQ and research", "lat": 43.6156, "lon": -84.2472, "name": "Midland", "population": 42000, "region": "Central/Growers"},
+    {"coord_status": "verified", "economy": "Pharma (Pfizer), craft brewing (Bell's), universities", "lat": 42.29, "lon": -85.5858, "name": "Kalamazoo", "population": 73000, "region": "West/Lakeshore"},
+    {"coord_status": "verified", "economy": "Lake port, manufacturing, beach tourism", "lat": 43.2342, "lon": -86.2483, "name": "Muskegon", "population": 38000, "region": "West/Lakeshore"},
+    {"coord_status": "verified", "economy": "Tulip festival tourism, diversified manufacturing", "lat": 42.7875, "lon": -86.1089, "name": "Holland", "population": 34000, "region": "West/Lakeshore"},
+    {"coord_status": "verified", "economy": "Cherry capital, wine country, resort tourism", "lat": 44.7681, "lon": -85.6222, "name": "Traverse City", "population": 16000, "region": "North/Up North"},
+    {"coord_status": "verified", "economy": "Resort tourism, Petoskey stones, historic Gaslight district", "lat": 45.3733, "lon": -84.9553, "name": "Petoskey", "population": 6000, "region": "North/Up North"},
+    {"coord_status": "verified", "economy": "Limestone and cement, fishing, lake tourism", "lat": 45.0617, "lon": -83.4328, "name": "Alpena", "population": 10000, "region": "North/Up North"},
+    {"coord_status": "verified", "economy": "Iron ore port, Northern Michigan University, tourism", "lat": 46.5464, "lon": -87.4067, "name": "Marquette", "population": 20000, "region": "Upper Peninsula"},
+    {"coord_status": "verified", "economy": "Michigan Tech university, copper mining heritage", "lat": 47.1211, "lon": -88.5694, "name": "Houghton", "population": 8000, "region": "Upper Peninsula"},
+    {"coord_status": "verified", "economy": "Iron mining heritage, ski tourism", "lat": 46.4558, "lon": -90.1594, "name": "Ironwood", "population": 5000, "region": "Upper Peninsula"},
+    {"coord_status": "verified", "economy": "Soo Locks shipping, border trade, tourism", "lat": 46.4969, "lon": -84.3456, "name": "Sault Ste. Marie", "population": 13000, "region": "Upper Peninsula"},
+    {"coord_status": "verified", "economy": "Iron ore port, paper mills, bay tourism", "lat": 45.7458, "lon": -87.0642, "name": "Escanaba", "population": 12000, "region": "Upper Peninsula"},
+    {"coord_status": "verified", "economy": "Iron mining heritage, manufacturing, tourism", "lat": 45.8225, "lon": -88.0642, "name": "Iron Mountain", "population": 7500, "region": "Upper Peninsula"},
+    {"coord_status": "verified", "economy": "Bridge and ferry tourism, Mackinac Island gateway", "lat": 45.7839, "lon": -84.7278, "name": "Mackinaw City", "population": 900, "region": "North/Up North"},
+    {"coord_status": "verified", "economy": "Bridge gateway tourism, ferries, fishing", "lat": 45.8742, "lon": -84.7258, "name": "St. Ignace", "population": 2300, "region": "Upper Peninsula"},
+    {"coord_status": "verified", "economy": "Ford HQ, auto plants, Rouge complex", "lat": 42.3144, "lon": -83.2133, "name": "Dearborn", "population": 110000, "region": "Southeast/Motor"},
+    {"coord_status": "verified", "economy": "GM Tech Center, auto and defense manufacturing", "lat": 42.5125, "lon": -83.025, "name": "Warren", "population": 135000, "region": "Southeast/Motor"},
+    {"coord_status": "verified", "economy": "Auto assembly (Stellantis), manufacturing suburbs", "lat": 42.5797, "lon": -83.0281, "name": "Sterling Heights", "population": 135000, "region": "Southeast/Motor"},
+    {"coord_status": "verified", "economy": "Auto heritage manufacturing, county seat services", "lat": 42.6461, "lon": -83.2925, "name": "Pontiac", "population": 61000, "region": "Southeast/Motor"},
+    {"coord_status": "verified", "economy": "Retail and entertainment hub, Detroit Zoo", "lat": 42.4889, "lon": -83.1428, "name": "Royal Oak", "population": 58000, "region": "Southeast/Motor"},
+    {"coord_status": "verified", "economy": "Manufacturing and retail, Grand Rapids suburb", "lat": 42.8764, "lon": -85.7575, "name": "Wyoming", "population": 76000, "region": "West/Lakeshore"},
+    {"coord_status": "verified", "economy": "Office and tech corridor, Detroit suburb", "lat": 42.4797, "lon": -83.245, "name": "Southfield", "population": 76000, "region": "Southeast/Motor"},
+    {"coord_status": "verified", "economy": "Tech suburbs, Oakland University, upscale retail", "lat": 42.6658, "lon": -83.1581, "name": "Rochester Hills", "population": 76000, "region": "Southeast/Motor"}
+  ],
+  "highways": [
+    {"name": "I-75", "type": "Interstate", "note": "Main north-south spine: Ohio line to Detroit, Flint, Saginaw, then north through Grayling/Gaylord, across the Mackinac Bridge to St. Ignace, ending at Sault Ste. Marie.", "waypoints": [
+      {"coord_status": "verified", "lat": 41.6528, "lon": -83.5378, "place": "Toledo, OH (Ohio-line anchor)"},
+      {"coord_status": "verified", "lat": 42.3317, "lon": -83.0458, "place": "Detroit"},
+      {"coord_status": "verified", "lat": 42.6461, "lon": -83.2925, "place": "Pontiac"},
+      {"coord_status": "verified", "lat": 43.0189, "lon": -83.6933, "place": "Flint"},
+      {"coord_status": "verified", "lat": 43.42, "lon": -83.95, "place": "Saginaw"},
+      {"coord_status": "verified", "lat": 44.6631, "lon": -84.7108, "place": "Grayling"},
+      {"coord_status": "verified", "lat": 45.0247, "lon": -84.6767, "place": "Gaylord"},
+      {"coord_status": "verified", "lat": 45.7839, "lon": -84.7278, "place": "Mackinaw City"},
+      {"coord_status": "verified", "lat": 45.8742, "lon": -84.7258, "place": "St. Ignace"},
+      {"coord_status": "verified", "lat": 46.4969, "lon": -84.3456, "place": "Sault Ste. Marie (north end)"}
+    ]},
+    {"name": "I-94", "type": "Interstate", "note": "East-west southern corridor: Indiana line via New Buffalo and Kalamazoo, through Jackson and Ann Arbor to Detroit, ending at Port Huron / Blue Water Bridge.", "waypoints": [
+      {"coord_status": "verified", "lat": 41.7939, "lon": -86.7439, "place": "New Buffalo (Indiana-line anchor)"},
+      {"coord_status": "verified", "lat": 42.29, "lon": -85.5858, "place": "Kalamazoo"},
+      {"coord_status": "verified", "lat": 42.2442, "lon": -84.4072, "place": "Jackson"},
+      {"coord_status": "verified", "lat": 42.2814, "lon": -83.7483, "place": "Ann Arbor"},
+      {"coord_status": "verified", "lat": 42.3144, "lon": -83.2133, "place": "Dearborn"},
+      {"coord_status": "verified", "lat": 42.3317, "lon": -83.0458, "place": "Detroit"},
+      {"coord_status": "verified", "lat": 42.975, "lon": -82.4244, "place": "Port Huron (east end)"}
+    ]},
+    {"name": "I-96", "type": "Interstate", "note": "Muskegon to Detroit via Grand Rapids and Lansing. West terminus is Norton Shores (Muskegon anchor used).", "waypoints": [
+      {"coord_status": "verified", "lat": 43.2342, "lon": -86.2483, "place": "Muskegon (west-end anchor)"},
+      {"coord_status": "verified", "lat": 42.9633, "lon": -85.6678, "place": "Grand Rapids"},
+      {"coord_status": "verified", "lat": 42.7142, "lon": -84.56, "place": "Lansing"},
+      {"coord_status": "verified", "lat": 42.4797, "lon": -83.245, "place": "Southfield"},
+      {"coord_status": "verified", "lat": 42.3317, "lon": -83.0458, "place": "Detroit (east end)"}
+    ]},
+    {"name": "I-69", "type": "Interstate", "note": "Southwest to east: Indiana line near Coldwater, through Lansing and Flint, ending at Port Huron.", "waypoints": [
+      {"coord_status": "verified", "lat": 41.94, "lon": -85.0, "place": "Coldwater (Indiana-line anchor)"},
+      {"coord_status": "verified", "lat": 42.7142, "lon": -84.56, "place": "Lansing"},
+      {"coord_status": "verified", "lat": 43.0189, "lon": -83.6933, "place": "Flint"},
+      {"coord_status": "verified", "lat": 42.975, "lon": -82.4244, "place": "Port Huron (east end)"}
+    ]},
+    {"name": "I-196", "type": "Interstate", "note": "Gerald R. Ford Freeway: Benton Harbor to Grand Rapids via Holland.", "waypoints": [
+      {"coord_status": "verified", "lat": 42.1167, "lon": -86.4542, "place": "Benton Harbor (west end)"},
+      {"coord_status": "verified", "lat": 42.7875, "lon": -86.1089, "place": "Holland"},
+      {"coord_status": "verified", "lat": 42.9633, "lon": -85.6678, "place": "Grand Rapids (east end)"}
+    ]},
+    {"name": "US-131", "type": "US Highway", "note": "North-south west Michigan: Indiana line near Three Rivers, through Kalamazoo and Grand Rapids, ending at Petoskey.", "waypoints": [
+      {"coord_status": "verified", "lat": 41.9442, "lon": -85.6322, "place": "Three Rivers (Indiana-line anchor)"},
+      {"coord_status": "verified", "lat": 42.29, "lon": -85.5858, "place": "Kalamazoo"},
+      {"coord_status": "verified", "lat": 42.9633, "lon": -85.6678, "place": "Grand Rapids"},
+      {"coord_status": "verified", "lat": 44.25, "lon": -85.4, "place": "Cadillac"},
+      {"coord_status": "verified", "lat": 45.3733, "lon": -84.9553, "place": "Petoskey (north end)"}
+    ]},
+    {"name": "US-23", "type": "US Highway", "note": "Sunrise Side route: Ohio line via Toledo, through Ann Arbor, Flint, Saginaw and Bay City, up the Lake Huron shore via Tawas and Alpena to Mackinaw City.", "waypoints": [
+      {"coord_status": "verified", "lat": 41.6528, "lon": -83.5378, "place": "Toledo, OH (Ohio-line anchor)"},
+      {"coord_status": "verified", "lat": 42.2814, "lon": -83.7483, "place": "Ann Arbor"},
+      {"coord_status": "verified", "lat": 43.0189, "lon": -83.6933, "place": "Flint"},
+      {"coord_status": "verified", "lat": 43.42, "lon": -83.95, "place": "Saginaw"},
+      {"coord_status": "verified", "lat": 43.595, "lon": -83.8886, "place": "Bay City"},
+      {"coord_status": "verified", "lat": 44.27, "lon": -83.5208, "place": "Tawas City"},
+      {"coord_status": "verified", "lat": 45.0617, "lon": -83.4328, "place": "Alpena"},
+      {"coord_status": "verified", "lat": 45.7839, "lon": -84.7278, "place": "Mackinaw City (north end)"}
+    ]},
+    {"name": "US-127", "type": "US Highway", "note": "North-south central: Ohio line near Hudson, through Jackson and Lansing, ending at Grayling (I-75).", "waypoints": [
+      {"coord_status": "verified", "lat": 41.8564, "lon": -84.3511, "place": "Hudson (Ohio-line anchor)"},
+      {"coord_status": "verified", "lat": 42.2442, "lon": -84.4072, "place": "Jackson"},
+      {"coord_status": "verified", "lat": 42.7142, "lon": -84.56, "place": "Lansing"},
+      {"coord_status": "verified", "lat": 44.6631, "lon": -84.7108, "place": "Grayling (north end)"}
+    ]},
+    {"name": "US-31", "type": "US Highway", "note": "Lake Michigan shoreline route: Indiana line near Niles, through Muskegon and Ludington, around via Traverse City and Petoskey to Mackinaw City.", "waypoints": [
+      {"coord_status": "verified", "lat": 41.83, "lon": -86.2533, "place": "Niles (Indiana-line anchor)"},
+      {"coord_status": "verified", "lat": 43.2342, "lon": -86.2483, "place": "Muskegon"},
+      {"coord_status": "verified", "lat": 43.9569, "lon": -86.4444, "place": "Ludington"},
+      {"coord_status": "verified", "lat": 44.7681, "lon": -85.6222, "place": "Traverse City"},
+      {"coord_status": "verified", "lat": 45.3733, "lon": -84.9553, "place": "Petoskey"},
+      {"coord_status": "verified", "lat": 45.7839, "lon": -84.7278, "place": "Mackinaw City (north end)"}
+    ]}
+  ],
+  "mackinac_bridge": {
+    "note": "Landings are approximated by the verified Mackinaw City / St. Ignace city centers; the true anchorages sit ~1-3km toward mid-bridge. At game scale, draw the bridge deck as a link south_endpoint -> center -> north_endpoint and treat it as a toll crossing between the North/Up North and Upper Peninsula regions.",
+    "length_km": 8.0,
+    "south_endpoint": {"coord_status": "verified", "lat": 45.7839, "lon": -84.7278, "place": "Mackinaw City side (city-center approx)"},
+    "center": {"coord_status": "verified", "lat": 45.8171, "lon": -84.7278, "place": "Mid-bridge (Mackinac Bridge article coordinate)"},
+    "north_endpoint": {"coord_status": "verified", "lat": 45.8742, "lon": -84.7258, "place": "St. Ignace side (city-center approx)"}
+  },
+  "regions": [
+    {"name": "Southeast/Motor", "bbox": {"min_lat": 41.7, "max_lat": 43.4, "min_lon": -84.7, "max_lon": -82.3}, "counties": ["Genesee", "Hillsdale", "Jackson", "Lapeer", "Lenawee", "Livingston", "Macomb", "Monroe", "Oakland", "St. Clair", "Washtenaw", "Wayne"]},
+    {"name": "West/Lakeshore", "bbox": {"min_lat": 41.7, "max_lat": 44.0, "min_lon": -86.8, "max_lon": -84.7}, "counties": ["Allegan", "Barry", "Berrien", "Branch", "Calhoun", "Cass", "Ionia", "Kalamazoo", "Kent", "Muskegon", "Newaygo", "Oceana", "Ottawa", "St. Joseph", "Van Buren"]},
+    {"name": "Central/Growers", "bbox": {"min_lat": 42.4, "max_lat": 44.2, "min_lon": -85.6, "max_lon": -82.5}, "counties": ["Bay", "Clinton", "Eaton", "Gratiot", "Huron", "Ingham", "Isabella", "Mecosta", "Midland", "Montcalm", "Saginaw", "Sanilac", "Shiawassee", "Tuscola"]},
+    {"name": "North/Up North", "bbox": {"min_lat": 43.7, "max_lat": 46.0, "min_lon": -86.5, "max_lon": -82.9}, "counties": ["Alcona", "Alpena", "Antrim", "Arenac", "Benzie", "Charlevoix", "Cheboygan", "Clare", "Crawford", "Emmet", "Gladwin", "Grand Traverse", "Iosco", "Kalkaska", "Lake", "Leelanau", "Manistee", "Mason", "Missaukee", "Montmorency", "Ogemaw", "Osceola", "Oscoda", "Otsego", "Presque Isle", "Roscommon", "Wexford"]},
+    {"name": "Upper Peninsula", "bbox": {"min_lat": 45.0, "max_lat": 48.3, "min_lon": -90.3, "max_lon": -83.9}, "counties": ["Alger", "Baraga", "Chippewa", "Delta", "Dickinson", "Gogebic", "Houghton", "Iron", "Keweenaw", "Luce", "Mackinac", "Marquette", "Menominee", "Ontonagon", "Schoolcraft"]}
+  ]
+}

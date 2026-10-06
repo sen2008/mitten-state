@@ -1,0 +1,18 @@
+# Godot 4
+.godot/
+*.godot.imported
+*.godot.uid
+
+# Build outputs
+build/
+dist/
+exports/
+*.pck
+*.exe
+*.x86_64
+*.zip
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
