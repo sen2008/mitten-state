@@ -56,7 +56,7 @@ Front-loaded risks are marked with the phase that kills or contains them. If any
 
 ### Exit
 - [x] Numbers appendix exists with every P2 field filled (no TBDs in M0-scoped rows).
-- [ ] Coupling spec + time-scale equation + election formula exist on paper.
+- [x] Coupling spec + time-scale equation + election formula exist on paper.
 - [ ] P1 default (Midwest crown) confirmed or replaced by Lucas — recorded in Decisions log either way.
 - [ ] Cut list re-ordered; multiplayer deleted; modding deferred in writing.
 - [ ] Language decision recorded with benchmark evidence.
