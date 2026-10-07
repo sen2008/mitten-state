@@ -1,6 +1,6 @@
 # Mitten State — 1.0 Roadmap
 
-**Target:** shippable 1.0 on Steam for PC (Win/Linux/macOS), $24.99 premium, Steam Deck as minimum spec.
+**Target:** shippable 1.0 on Steam for PC (Windows/Linux), $24.99 premium, Steam Deck as minimum spec.
 **Team:** Lucas (solo dev, Godot 4 experienced) + AI coding agents doing heavy implementation.
 **Sources:** GDD v0.1 (`docs/MITTEN-STATE-GDD-v0.1.md`), design review (`docs/design-review-muse-code.md`).
 **Status:** draft — P1 win-condition decision still pending (see Phase 0 and Decisions log).
@@ -213,7 +213,7 @@ Front-loaded risks are marked with the phase that kills or contains them. If any
 - [ ] **Demo:** The Plant Closing as free demo (per GDD §19); demo branch cut from beta-stable build; demo→wishlist/full-game funnel wired (end card links).
 - [ ] **Steam Next Fest:** check the current schedule and apply the edition BEFORE the one you want (acceptance + build deadlines close months out); demo build frozen ≥2 weeks before Fest; Fest-week plan (Lucas streams/plays the demo, patch window reserved, feedback form live).
 - [ ] **Steamworks integration:** achievements (small set: first re-election, Midwest crown, survive the Big Snow…), cloud saves, stats if cheap. Cut Rich Presence and anything else that isn't checklist-grade.
-- [ ] **Build hygiene:** Win + Linux (+macOS if signing/notarization is sorted — honest note: macOS signing is a real time sink for a solo dev; Linux+Windows first is defensible) builds from clean checkout; version stamp; crash reporting or at minimum a log-file path players can paste.
+- [ ] **Build hygiene:** Windows + Linux builds from clean checkout (macOS cut — decided 2026-10-06, signing/notarization not worth solo-dev time); version stamp; crash reporting or at minimum a log-file path players can paste.
 - [ ] **Store compliance:** age rating questionnaire, content disclosure (no surprises — it's a cozy gov sim, but fill the forms), tax/banking in Steamworks, $24.99 price + regional pricing review.
 - [ ] **Press/influencers:** 20–50 keys to management-sim YouTubers/streamers + Michigan-angle press (local hook is real: "govern Michigan" plays in Detroit/Grand Rapids media) 1–2 weeks pre-launch; one-page press kit (pitch, facts, screenshots, trailer link).
 - [ ] **Launch-day ops:** release build staged, rollback build kept, Lucas available for 48h hotfix window, known-issues thread template ready, review-response plan (read everything week one, patch fast).
@@ -249,7 +249,7 @@ Rule: cuts 1–4 are pre-decided. Only 5–7 require a decision at the time, and
 | NORTH | Faction/region fix | Open → Phase 0 | TBD in Phase 0 work item 7 |
 | TIME | Time-scale equation | Open → Phase 0 | Longer readable days + per-beat tint + honest term-hours |
 | N | Campaign length (terms to win) | Open → Phase 4 balance | 3–5 terms |
-| MAC | macOS at launch | Open → Phase 5 | Win+Linux first is acceptable |
+| MAC | macOS at launch | **Decided 2026-10-06: cut** | Windows + Linux only |
 
 ---
 
