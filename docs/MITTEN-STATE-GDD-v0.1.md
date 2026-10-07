@@ -239,7 +239,7 @@ Light but present: ambient town beds, seasonal soundscapes (crickets in summer, 
 
 ## 19. Platform & release
 
-**Decision: PC via Steam (Windows/Linux/macOS), mouse-first.**
+**Decision: PC via Steam (Windows/Linux), mouse-first.**
 
 - The genre's audience buys on PC: the Tropico series has topped 4.5M sales lifetime; Cities: Skylines hit #1 on Steam's top-seller list at launch; the management/political-sim audience (Tropico, Democracy, Suzerain) is concentrated on Steam.
 - The UI this game needs — dense dashboards, precise map zooming, peep-picking — wants a mouse. Touch/phone is out (agreed).
