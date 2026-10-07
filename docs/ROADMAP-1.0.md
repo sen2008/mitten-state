@@ -55,7 +55,7 @@ Front-loaded risks are marked with the phase that kills or contains them. If any
 12. **Language decision (GDD §18 open question).** C# vs GDScript vs both (C# sim core, GDScript UI). Decide with a one-day spike if needed: 5k-agent tick benchmark in each. Recommendation going in: C# sim core for R4 headroom, GDScript UI for iteration speed — but the spike result wins, not the recommendation. Artifact: one paragraph + benchmark numbers.
 
 ### Exit
-- [ ] Numbers appendix exists with every P2 field filled (no TBDs in M0-scoped rows).
+- [x] Numbers appendix exists with every P2 field filled (no TBDs in M0-scoped rows).
 - [ ] Coupling spec + time-scale equation + election formula exist on paper.
 - [ ] P1 default (Midwest crown) confirmed or replaced by Lucas — recorded in Decisions log either way.
 - [ ] Cut list re-ordered; multiplayer deleted; modding deferred in writing.
